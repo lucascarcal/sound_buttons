@@ -22,8 +22,8 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(15),
         child: GridView.count(
           crossAxisCount: 4,
-          mainAxisSpacing: 15,
-          crossAxisSpacing: 15,
+          mainAxisSpacing: 20,
+          crossAxisSpacing: 20,
           children: [
             SoundButton(
               song: 'guitar.mp3',
@@ -32,14 +32,26 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SoundButton(
               song: 'total_relax.mp3',
-              backgroundColor: Colors.deepPurpleAccent,
-              icon: FaIcon(FontAwesomeIcons.chessKnight),
+              backgroundColor: Colors.blue,
+              icon: FaIcon(FontAwesomeIcons.cloudSunRain),
             ),
             SoundButton(
               song: 'fart.mp3',
-              backgroundColor: Colors.cyan,
-              icon: FaIcon(FontAwesomeIcons.personRunning),
+              backgroundColor: Colors.brown,
+              icon: FaIcon(FontAwesomeIcons.poo),
             ),
+            SoundButton(
+                song: 'rain.mp3',
+                backgroundColor: Colors.grey,
+                icon: FaIcon(FontAwesomeIcons.cloudRain)),
+            SoundButton(
+                song: 'fire.mp3',
+                backgroundColor: Colors.green,
+                icon: FaIcon(FontAwesomeIcons.mountain)),
+            SoundButton(
+                song: 'fire.mp3',
+                backgroundColor: Colors.orange,
+                icon: FaIcon(FontAwesomeIcons.fire)),
           ],
         ),
       ),
