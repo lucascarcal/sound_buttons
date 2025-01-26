@@ -25,7 +25,7 @@ class _SoundButtonState extends State<SoundButton> {
     super.initState();
     player.onPlayerComplete.listen((_) {
       /// El audio ha terminado de reproducirse.
-      isPlaying = false;
+      changeState(false);
     });
   }
 
@@ -34,7 +34,7 @@ class _SoundButtonState extends State<SoundButton> {
     return FloatingActionButton(
       onPressed: playSound,
       backgroundColor: widget.backgroundColor,
-      child: FaIcon(widget.icon),
+      child: isPlaying ? FaIcon(FontAwesomeIcons.pause) : FaIcon(widget.icon),
     );
   }
 
@@ -42,10 +42,17 @@ class _SoundButtonState extends State<SoundButton> {
   void playSound() {
     if (isPlaying) {
       player.stop();
-      isPlaying = false;
+      changeState(false);
     } else {
       player.play(AssetSource(widget.song));
-      isPlaying = true;
+      changeState(true);
     }
+  }
+
+  /// Cambia el estado del reproductor.
+  void changeState(bool state) {
+    setState(() {
+      isPlaying = state;
+    });
   }
 }
