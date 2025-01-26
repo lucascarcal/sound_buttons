@@ -45,9 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 backgroundColor: Colors.grey,
                 icon: FaIcon(FontAwesomeIcons.cloudRain)),
             SoundButton(
-                song: 'fire.mp3',
-                backgroundColor: Colors.green,
-                icon: FaIcon(FontAwesomeIcons.mountain)),
+                song: 'claxon.mp3',
+                backgroundColor: Colors.red,
+                icon: FaIcon(FontAwesomeIcons.car)),
             SoundButton(
                 song: 'fire.mp3',
                 backgroundColor: Colors.orange,
