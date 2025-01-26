@@ -1,10 +1,11 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SoundButton extends StatefulWidget {
   final String song;
   final Color? backgroundColor;
-  final Widget? icon;
+  final IconData? icon;
   const SoundButton(
       {super.key, required this.song, this.backgroundColor, this.icon});
 
@@ -33,7 +34,7 @@ class _SoundButtonState extends State<SoundButton> {
     return FloatingActionButton(
       onPressed: playSound,
       backgroundColor: widget.backgroundColor,
-      child: widget.icon,
+      child: FaIcon(widget.icon),
     );
   }
 
