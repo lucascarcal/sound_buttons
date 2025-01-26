@@ -56,15 +56,24 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: FontAwesomeIcons.fire,
             ),
             SoundButton(
-              song: 'storm.mp3',
+              song: 'wind.mp3',
               backgroundColor: Colors.cyanAccent,
-              icon: FontAwesomeIcons.cloudBolt,
+              icon: FontAwesomeIcons.wind,
             ),
             SoundButton(
               song: 'waves.mp3',
               backgroundColor: Colors.blue,
               icon: FontAwesomeIcons.water,
             ),
+            SoundButton(
+              song: 'frog.mp3',
+              backgroundColor: Colors.greenAccent,
+              icon: FontAwesomeIcons.frog,
+            ),
+            SoundButton(
+                song: 'crickets.mp3',
+                backgroundColor: Colors.pinkAccent,
+                icon: FontAwesomeIcons.bug),
           ],
         ),
       ),
