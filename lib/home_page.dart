@@ -78,6 +78,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 song: 'cow.mp3',
                 backgroundColor: Colors.purpleAccent,
                 icon: FontAwesomeIcons.cow),
+            SoundButton(
+                song: 'clock.mp3',
+                backgroundColor: Colors.yellowAccent,
+                icon: FontAwesomeIcons.clock),
           ],
         ),
       ),
